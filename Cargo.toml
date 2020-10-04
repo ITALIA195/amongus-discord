@@ -1,0 +1,28 @@
+[package]
+name = "amongus-discord"
+version = "0.1.0"
+authors = ["Hawk <italia195@outlook.it>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "0.2", features = ["macros"] }
+
+[dependencies.serenity]
+default-features = false
+version = "0.9.0-rc.1"
+features = [
+    "builder",
+    "collector",
+    "client",
+    "voice",
+    "cache",
+    "framework",
+    "standard_framework",
+    "gateway",
+    "http",
+    "model",
+    "utils",
+    "rustls_backend"
+]
